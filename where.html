@@ -21,6 +21,14 @@
       var scriptElement = document.createElement('script');
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+      var divElement2 = document.getElementById('viz1578421775822'); 
+      var vizElement2 = divElement2.getElementsByTagName('object')[0]; 
+      vizElement2.style.width = '100%'; 
+      vizElement2.style.height = (divElement2.offsetWidth * 0.75) + 'px'; 
+      var scriptElement2 = document.createElement('script'); 
+      scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+      vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
     })
   </script>
 
@@ -50,7 +58,7 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Dashboard 1</a></li>
+          <li><a href="index.html">Dashboard</a></li>
           <li><a href="conflictType.html">Conflict type by Region</a></li>
           <li class="active"><a href="where.html">Where are done</a></li class="active">
           <li><a href="terrorism.html">Terrorism agreements</a></li>
@@ -115,6 +123,42 @@
             </div>
           </div>
         </div> -->
+      </div>
+      <div class="row banner_descarga">
+        <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12">
+          <h2>Where are the agreements done by year</h2>
+        </div>
+        <div class="col-lg-12">
+          <div class='tableauPlaceholder2' id='viz1578421775822' style='position: relative'>
+            <noscript>
+              <a href='#'>
+                <img alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhereByYear&#47;WhereAreDonebyYear&#47;1_rss.png'
+                  style='border: none' />
+                </a>
+              </noscript>
+              <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='WhereByYear&#47;WhereAreDonebyYear' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image'
+                  value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wh&#47;WhereByYear&#47;WhereAreDonebyYear&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+              </object>
+            </div>
+        </div>
+        <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12" style="margin-top: 25px;">
+          <h4>Descripción</h4>
+          <p>Gráfico geográfico en el que se visualizan los países dónde tiene origen el conflicto. Este gráfico se ha diseñado con el fin de que posea dinamismo, y por ello se permite filtrar por añoS.</p>
+          <p><a href="https://public.tableau.com/views/WhereByYear/WhereAreDonebyYear?:display_count=y&:origin=viz_share_link">Ver en Tableau</a></p>
+        </div>
       </div>
     </div>
   </main>

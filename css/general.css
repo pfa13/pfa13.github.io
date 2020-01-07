@@ -1,7 +1,7 @@
 * {
   font-family: 'Raleway', sans-serif;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  /* padding: 0 0 0 0; */
   box-sizing: border-box !important;
     -moz-box-sizing: border-box !important;
     -webkit-box-sizing: border-box !important;
@@ -77,6 +77,10 @@ nav ul li a {
   padding-bottom: 40px;
 }
 
+.footer_columns ul {
+  list-style-type: none;
+}
+
 .titulo {
   font-size: 16px;
   font-weight: 700;
@@ -85,9 +89,9 @@ nav ul li a {
   color: #686767;
 }
 
-ul {
+/* ul {
   list-style-type: none;
-}
+} */
 
 .news p {
   margin-bottom: 0;
@@ -294,7 +298,7 @@ table {
 
 .banner_descarga {
   padding-top: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   width: auto;
 }
 
@@ -303,14 +307,19 @@ table {
 }
 
 .banner_descarga h4 {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 20px;
   font-style: italic;
   text-align: center;
 }
 
+.banner_descarga h6 {
+  font-style: italic;
+}
+
 .texto_banner {
-  padding-right: 0;
-  padding-left: 0;
+  /* padding-right: 0;
+  padding-left: 0; */
 }
 
 .boton_descargar{

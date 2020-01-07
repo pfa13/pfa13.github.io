@@ -14,7 +14,7 @@
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      $('main').css('height', 'auto'); 
+      $('main').css('height', 'auto');
     })
   </script>
 
@@ -56,15 +56,79 @@
   </nav>
 
   <main>
-    
+
     <div class="container">
       <div class="row banner_descarga">
         <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12">
           <h2>Peace Agreements</h2>
-          <h4></h4>
-          <p></p>
-          <h4></h4>
-          <p></p>
+          <h4>¿Qué aporta de nuevo respeto la PEC3?</h4>
+          <p>Se ha añadido una nueva visualización en el menú <strong>Where are done</strong> y un nueva dashboard que incluye dicha visualización junto con todas las anteriores en el menú <strong>Dashboard</strong></p>
+          <h4>Aprendizaje a través de la exploración de datos</h4>
+          <p>A través de la exploración del conjunto de datos, hemos podido observar las siguientes características sobre estos:
+            <ul>
+              <li>Con respecto al tipo de los datos contenidos en el conjunto de datos seleccionado, la gran mayoría de los datos son de tipo string, salvo las medidas que son de tipo numéricos, que son aquellas que indican cuántas veces ha mencionado el acuerdo a algún campo de interés (derechos humanos, terrorismo, medio ambiente,…).</li>
+              <li>En cuanto a la estructura del conjunto de datos, está estructurado en filas y columnas en un fichero tipo Excel.</li>
+              <li>Como curiosidad, hemos observado que los campos de interés tienen un campo para el campo general y además están separados (columnas) en varias áreas dentro de ese campo.</li>
+            </ul>
+          </p>
+          <h4>Herramientas de visualización de Datos usadas</h4>
+          <p>Se ha hecho uso de Tableau</p>
+          <h4>Descripción técnica y del proceso del proyecto. Así como los retos que han surgido en el proceso</h4>
+          <p>El proceso de trabajo sobre los datos del conjunto de datos será el siguiente:
+          <ul>
+            <li>Limpieza
+              <ul>
+                <li>Ausencia de estándares.</li>
+                <li>Datos fantasmas (datos artificiales o falsos).</li>
+                <li>Datos ausentes.</li>
+                <li>Diferentes formatli para el mismo campo.</li>
+                <li>Ausencia de datos.</li>
+                <li>Valores atípicos.</li>
+                <li>Igualar campos.</li>
+                <li>Descartar campos.</li>
+                <li>Corregir errores ortográficos.</li>
+                <li>Dar formato a fechas.</li>
+                <li>Eliminar columnas duplicadas.</li>
+                <li>Borrar registros no útiles.</li>
+              </ul>
+            </li>
+            <li>Categorizar
+              <ul>
+                <li>Categorías mutuamente excluyentes.</li>
+                <li>Categorías exhaustivas (deben agotar todas las posibilidades de variación).</li>
+              </ul>
+            </li>
+            <li>Análisis
+              <ul>
+                <li>Relaciones.</li>
+                <li>Tendencias.</li>
+                <li>Ordenar.</li>
+                <li>Filtrar.</li>
+              </ul>
+            </li>
+          </ul>
+          </p>
+          <h4>¿Es efectiva para mostrar lo que se quiere?</h4>
+          <p>Hemos seleccionado este proyecto ya que actualmente los acuerdos de paz entre los distintos países del mundo es un tema candente y el cual se encuentra en continua evolución y desarrollo.</p>
+          <p>El propósito y expectativas de esta visualización es poder encontrar patrones de acuerdos de paz en los diferentes países, tales como reducción/aumento de los acuerdos de paz de un país con respecto a un tema a tratar, como por ejemplo sobre terrorismo.</p>
+          <p>Las respuestas que esperamos conseguir son las respuestas a las siguientes preguntas:
+            <ul>
+              <li>¿Han aumentado o reducido el número de conflictos de una región?</li>
+              <li>¿Dónde se han realizado más acuerdos?</li>
+              <li>¿Cuáles son los países con más acuerdos sobre terrorismo?</li>
+              <li>¿Qué países tienen mayor porcentaje de casos atípicos en los acuerdos adoptados?</li>
+            </ul>
+          </p>
+          <h4>Diseño, accesibilidad, color.</h4>
+          <h6>COLORES</h6>
+          <p>Los colores que escogeremos serán colores pastel, con una clara diferenciación entre ellos.</p>
+          <h6>TIPOGRAFÍA</h6>
+          <p>La tipografía seleccionada será Calibri o Times New Roman.</p>
+          <h6>ESTRUCTURA O PLANTILLA</h6>
+          <p>No se usará ninguna plantilla o estructura.</p>
+          <h4>Prácticas anteriores</h4>
+          <h4><a href="resources/PEC2.pdf" target="_blank">Práctica 2</a></h4>
+          <h4><a href="resources/PEC3_pfrias.pdf" target="_blank">Práctica 3</a></h4>
         </div>
       </div>
         <!-- <div class="col-lg-6">
