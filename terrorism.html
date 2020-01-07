@@ -4,25 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>DicereGram</title>
+  <title>Visualización de Datos</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="icon" href="images/favicon.ico">
+  <link rel="icon" href="http://guia-frontend.uoc.edu/UOC/GEFv2/assets/img/logo-uoc-default.png">
   <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).ready(function(){
       $('main').css('height', 'auto');
-      var divElement = document.getElementById('viz1578386657058');                    
-      var vizElement = divElement.getElementsByTagName('object')[0];                    
-      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-      else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-      else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     
-      var scriptElement = document.createElement('script');                    
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);   
+      var divElement = document.getElementById('viz1578389299547'); 
+      var vizElement = divElement.getElementsByTagName('object')[0]; 
+      vizElement.style.width = '100%'; 
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; 
+      var scriptElement = document.createElement('script'); 
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
     })
   </script>
 
@@ -52,13 +51,12 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Dashboard 1</a></li>
-          <li><a href="informacion.html">Dashboard 2</a></li>
-          <li><a href="about.html">Conflict type by Region</a></li>
-          <li><a href="about.html">Where are done</a></li>
-          <li><a href="about.html">Terrorism agreements</a></li>
-          <li><a href="about.html">Outliers Environment</a></li>
-          <li><a href="legal.html">Aviso legal</a></li>
+          <li><a href="index.html">Dashboard 1</a></li>
+          <li><a href="dashboard2.html">Dashboard 2</a></li>
+          <li><a href="conflictType.html">Conflict type by Region</a></li>
+          <li><a href="where.html">Where are done</a></li class="active">
+          <li class="active"><a href="terrorism.html">Terrorism agreements</a></li class="active">
+          <li><a href="outliers.html">Outliers Environment</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -69,29 +67,33 @@
     <div class="container">
       <div class="row banner_descarga">
         <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12">
-          <h2>Peace Agreements</h2>
+          <h2>Countries with most terrorism agreements</h2>
         </div>
         <div class="col-lg-12">
-          <div class='tableauPlaceholder' id='viz1578386657058' style='position: relative'>
+          <div class='tableauPlaceholder' id='viz1578389299547' style='position: relative'>
             <noscript>
               <a href='#'>
-                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard_15739895646570&#47;Dashboard1&#47;1_rss.png' style='border: none' />
+                <img alt=' '
+                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countriesterrorism&#47;Countrieswithmostterrorismagreements&#47;1_rss.png'
+                  style='border: none' />
               </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
-              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-              <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-              <param name='name' value='Dashboard_15739895646570&#47;Dashboard1' />
-              <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-              <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;Dashboard_15739895646570&#47;Dashboard1&#47;1.png' /> 
+            <object class='tableauViz' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+              <param name='embed_code_version' value='3' />
+              <param name='site_root' value='' />
+              <param name='name' value='Countriesterrorism&#47;Countrieswithmostterrorismagreements' />
+              <param name='tabs' value='no' />
+              <param name='toolbar' value='yes' />
+              <param name='static_image'
+                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Co&#47;Countriesterrorism&#47;Countrieswithmostterrorismagreements&#47;1.png' />
               <param name='animate_transition' value='yes' />
               <param name='display_static_image' value='yes' />
               <param name='display_spinner' value='yes' />
               <param name='display_overlay' value='yes' />
               <param name='display_count' value='yes' />
             </object>
-          </div>                
-          
+          </div>
         </div>
         <!-- <div class="col-lg-6">
           <img src="images/login.png" alt="" class="imagen">
@@ -133,12 +135,11 @@
           <div class="titulo">PEC 4 - Visualización</div>
           <ul>
             <li><a href="index.html">Dashboard 1</a></li>
-            <li><a href="informacion.html">Dashboard 2</a></li>
-            <li><a href="about.html">Conflict type by Region</a></li>
-            <li><a href="about.html">Where are done</a></li>
-            <li><a href="about.html">Terrorism agreements</a></li>
-            <li><a href="about.html">Outliers Environment</a></li>
-            <li><a href="legal.html">Aviso legal</a></li>
+            <li><a href="dashboard2.html">Dashboard 2</a></li>
+            <li><a href="conflictType.html">Conflict type by Region</a></li>
+            <li><a href="where.html">Where are done</a></li>
+            <li><a href="terrorism.html">Terrorism agreements</a></li>
+            <li><a href="outliers.html">Outliers Environment</a></li>
           </ul>
         </div>
         <div class="col-lg-4">
