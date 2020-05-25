@@ -12,18 +12,6 @@
   <link rel="icon" href="http://guia-frontend.uoc.edu/UOC/GEFv2/assets/img/logo-uoc-default.png">
   <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('main').css('height', 'auto');
-      var divElement = document.getElementById('viz1578389595280'); 
-      var vizElement = divElement.getElementsByTagName('object')[0]; 
-      vizElement.style.width = '100%'; 
-      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; 
-      var scriptElement = document.createElement('script'); 
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    })
-  </script>
 
   </script>
 </head>
@@ -51,12 +39,12 @@
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Dashboard</a></li>
-          <li><a href="conflictType.html">Conflict type by Region</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="report.html">Report</a></li class="active">
+          <!-- <li><a href="conflictType.html">Conflict type by Region</a></li>
           <li><a href="where.html">Where are done</a></li class="active">
-          <li><a href="terrorism.html">Terrorism agreements</a></li class="active">
-          <li class="active"><a href="outliers.html">Outliers Environment</a></li class="active">
-          <li><a href="anexo.html">Anexo</a></li>
+          <li><a href="terrorism.html">Terrorism agreements</a></li class="active">          
+          <li><a href="anexo.html">Anexo</a></li> -->
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -67,33 +55,10 @@
     <div class="container">
       <div class="row banner_descarga">
         <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12">
-          <h2>Outliers environment</h2>
+          <h2>Report WebScraping against Amazon</h2>
         </div>
         <div class="col-lg-12">
-          <div class='tableauPlaceholder' id='viz1578389595280' style='position: relative'>
-            <noscript>
-              <a href='#'>
-                <img alt=' '
-                  src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ou&#47;Outliers_15739898119610&#47;OutliersEnvironment&#47;1_rss.png'
-                  style='border: none' />
-                </a>
-              </noscript>
-              <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                <param name='embed_code_version' value='3' />
-                <param name='site_root' value='' />
-                <param name='name' value='Outliers_15739898119610&#47;OutliersEnvironment' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image'
-                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ou&#47;Outliers_15739898119610&#47;OutliersEnvironment&#47;1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-              </object>
-            </div>
+          <iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=2c95cf9a-e4dd-4d6e-bc91-e6f8584636bf&autoAuth=true&ctid=aec762e4-3d54-495e-a8fe-4287dce6fe69&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLW5vcnRoLWV1cm9wZS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>   
         </div>
         <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12" style="margin-top: 25px;">
           <h4>Descripción</h4>
