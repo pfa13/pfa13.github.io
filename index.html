@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Visualización de Datos</title>
+  <title>WebScraping against Amazon</title>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/general.css">
@@ -12,30 +12,6 @@
   <link rel="icon" href="http://guia-frontend.uoc.edu/UOC/GEFv2/assets/img/logo-uoc-default.png">
   <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('main').css('height', 'auto');
-      var divElement = document.getElementById('viz1578386657058');                    
-      var vizElement = divElement.getElementsByTagName('object')[0];                    
-      if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-      else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} 
-      else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     
-      var scriptElement = document.createElement('script');                    
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);   
-
-      var divElement2 = document.getElementById('viz1578422176723'); 
-      var vizElement2 = divElement2.getElementsByTagName('object')[0]; 
-      if (divElement2.offsetWidth > 800) { vizElement2.style.width = '1000px'; vizElement2.style.height = '827px'; } 
-      else if (divElement2.offsetWidth > 500) { vizElement2.style.width = '1000px'; vizElement2.style.height = '827px'; } 
-      else { vizElement2.style.width = '100%'; vizElement2.style.height = '1677px'; } 
-      var scriptElement2 = document.createElement('script'); 
-      scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
-      vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
-    })
-  </script>
-
-  </script>
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -76,10 +52,10 @@
     
     <div class="container">
       <div class="row banner_descarga">
-        <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12">
+        <!-- <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12">
           <h2>WebScraping against Amazon</h2>
         </div>
-        <!-- <div class="col-lg-12">
+        <div class="col-lg-12">
           
         </div>
         <div class="texto_banner col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-0 col-lg-12" style="margin-top: 25px;">
@@ -126,12 +102,12 @@
         <div class="col-lg-6">
           <div class="titulo">WebScraping against Amazon</div>
           <ul>
-            <li><a href="index.html">Report</a></li>
-            <li><a href="conflictType.html">Conflict type by Region</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report.html">Report</a></li>
+            <!-- <li><a href="conflictType.html">Conflict type by Region</a></li>
             <li><a href="where.html">Where are done</a></li>
-            <li><a href="terrorism.html">Terrorism agreements</a></li>
-            <li><a href="outliers.html">Outliers Environment</a></li>
-            <li><a href="anexo.html">Anexo</a></li>
+            <li><a href="terrorism.html">Terrorism agreements</a></li>            
+            <li><a href="anexo.html">Anexo</a></li> -->
           </ul>
         </div>
         <div class="col-lg-6">
